@@ -12,16 +12,19 @@ Isolate parts in the currents app that is risky.
 Instrument every flow and take note of current changes made for further prioritization.
 
 FRONTEND
+
 Customer + Drivers mobile app: React Native like Expo(single code base and fast iteration)
 Merchant/riders and admin panels: React + Typescript or (Next.js for quick SSR if needed)
 Reason for choosing react native framework is because this feature is mostly used for large scale work that is prone to heavy traffic and real time activities.
 
 BACKEND
+
 Modular monolith first architecture: Node.js + NestJS or Express + TypeScript (single service initially, split later) Realtime: Socket.IO for prototype
 
 Reason for choosing this backend tool is because it's faster in delivery and good for iterations.
 
 DATABASE STACK
+
 Primary DB: PostgreSQL (PostGIS extension if geospatial queries needed).
 
 Cache / pub-sub / jobs: Redis (managed Redis) pub/sub and simple queues.
@@ -29,6 +32,7 @@ Cache / pub-sub / jobs: Redis (managed Redis) pub/sub and simple queues.
 Object storage: S3 (AWS) or DigitalOcean Spaces for images and receipts.
 
 THIRD PARTIES
+
 For 3rd parties like maps, payment platforms and sms notification platforms we will maintain the existing ones.
 
 
