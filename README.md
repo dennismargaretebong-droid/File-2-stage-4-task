@@ -60,7 +60,11 @@ HOW COMPONENTS COMMUNICATE
 
 Mobile/web:Backend over HTTPS (REST/GraphQL).
 
-Realtime order and tracking updates via Socket.IO (driver to backend to customer). Socket server uses Redis pub/sub for multi-instance support. Backend calls Map API for routing/ETA when assigning drivers (cached). Payments handled by Payments component via gateway webhooks to backend.
+Realtime order and tracking updates via Socket.IO (driver to backend to customer). 
+
+Socket server uses Redis pub/sub for multi-instance support.
+
+Backend calls Map API for routing/ETA when assigning drivers (cached). Payments handled by Payments component via gateway webhooks to backend.
 
 
 WHY MY APPROACH IS TECHNICALLY VISIBLE
